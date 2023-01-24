@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Dashboard from './Pages/Dashboard';
-import Sidebar from './Components/Sidebar';
+import Sidebar from './Components/Sidebar/Sidebar';
 const App=()=> {
   return (
     <Div>
