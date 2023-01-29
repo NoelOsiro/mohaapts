@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-import { FcBiotech } from "react-icons/fc";
 import { SiHomeassistant } from "react-icons/si";
-import { MdSpaceDashboard } from "react-icons/md";
-import { RiHomeSmileLine } from "react-icons/ri";
-import { FaCreditCard, FaHouseUser } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
-import scrollreveal from "scrollreveal";
 import { Brand, LinkDiv, LinksList, ListItem, LogoutBtn, Section, Toggle, Top } from "./sidebarStyles";
 import { SidebarLinks, ILink } from './Links';
 
 
 const Sidebar = () => {
-
+  const [currentLink, setCurrentLink] = useState(1)
   return (
     <>
       <Section>
@@ -25,7 +20,8 @@ const Sidebar = () => {
           <LinkDiv>
             <LinksList>
               {SidebarLinks.map((link: ILink) => (
-                <ListItem>
+                <ListItem key={link.id} className={currentLink === link.id ? "active" : ""}
+                onClick={() => setCurrentLink(link.id)}>
                   <a href={link.href}>
                     <link.icon/>
                     <span>{link.text}</span>
