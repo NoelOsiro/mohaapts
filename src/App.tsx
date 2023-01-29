@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Dashboard from './Pages/Dashboard';
+import Dashboard from './Pages/Dashboard/Dashboard';
 import Sidebar from './Components/Sidebar/Sidebar';
 const App=()=> {
   return (
