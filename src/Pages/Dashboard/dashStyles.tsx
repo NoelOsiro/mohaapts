@@ -26,8 +26,17 @@ export const Row1 = styled.div`
     }
 `
 export const Row2 = styled.div`
+    display: block;
+    /* grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    height: 50%;
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        grid-template-columns: 1fr;
+    } */
+`
+export const Row3 = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     height: 50%;
     @media screen and (min-width: 280px) and (max-width: 1080px) {

@@ -10,7 +10,7 @@ export default function Analytics() {
   return (
     <Section>
       {CardLists.map((card)=>(
-        <DataCard title={card.title} 
+        <DataCard title={card.title} key={card.title}
         amount={card.amount} icon={card.icon}/>
       ))}
     </Section>

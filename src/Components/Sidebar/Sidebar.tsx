@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { SiHomeassistant } from "react-icons/si";
 import { FiLogOut } from "react-icons/fi";
@@ -32,7 +32,7 @@ const Sidebar = () => {
           </LinkDiv>
         </Top>
         <LogoutBtn>
-          <a href="#">
+          <a href="/logout">
             <FiLogOut />
             <span className="logout">Logout</span>
           </a>

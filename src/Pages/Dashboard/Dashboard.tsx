@@ -1,14 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
 import Navbar from '../../Components/Navbar/Navbar';
 import Accounts from '../Accounts';
 import Analytics from '../Analytics';
 import Payments from '../Payments';
 import Profile from '../Profile';
 import Tenants from '../Tenants';
-import { Section,Grid, Row1, Row2 } from './dashStyles';
+import { Section, Grid, Row1, Row2, Row3 } from './dashStyles';
 
-const Dashboard=() =>{
+const Dashboard = () => {
   return (
     <Section>
       <Navbar />
@@ -19,9 +18,12 @@ const Dashboard=() =>{
         </Row1>
         <Row2>
           <Payments />
-          <Tenants />
-          <Profile />
+
         </Row2>
+        <Row3>
+          <Tenants />
+          <Analytics/>
+        </Row3>
       </Grid>
     </Section>
   );

@@ -1,9 +1,5 @@
 import { IconType } from "react-icons";
-import { BiGroup } from "react-icons/bi";
-import { BsFillCalendar2WeekFill } from "react-icons/bs";
 import { FcPlanner, FcPositiveDynamic, FcSalesPerformance } from "react-icons/fc";
-import { FiActivity } from "react-icons/fi";
-import { IoStatsChart } from "react-icons/io5";
 import { MdFiberNew } from "react-icons/md";
 
 export interface ICard{
