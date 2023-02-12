@@ -20,9 +20,9 @@ const Sidebar = () => {
           <LinkDiv>
             <LinksList>
               {SidebarLinks.map((link: ILink) => (
-                <ListItem key={link.id} className={currentLink === link.id ? "active" : ""}
+                <ListItem to={link.href} key={link.id} className={currentLink === link.id ? "active" : ""}
                 onClick={() => setCurrentLink(link.id)}>
-                  <a href={link.href}>
+                  <a>
                     <link.icon/>
                     <span>{link.text}</span>
                   </a>

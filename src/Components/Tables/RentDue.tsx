@@ -1,7 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import { Column, useSortBy, useTable } from 'react-table';
-export default function Payments() {
+import { Section, SectionHeader, Table, TBody, TData, Thead, TheadRow } from "./tableStyles";
+export default function RentDue() {
   const data = React.useMemo(
     () => [
         {
@@ -125,40 +125,4 @@ export default function Payments() {
     </Section>
   );
 }
-
-const Section = styled.section`
-  display: block;
-`;
-
-const SectionHeader = styled.h1`
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  color:white;
-  font-family: 'Teko';
-`
-const Table = styled.table`
-  background-color:#212121;
-  width: 100%;
-`
-const Thead= styled.thead`
-  color:white;
-`
-const TheadRow= styled.th`
-  padding: 10px;
-  border-bottom: solid 2px #ffc107;
-`
-const TBody= styled.tbody`
-  color:white;
-  text-align:center;
-`
-const TData = styled.td`
-  padding: 10px;
-  border-top: none;
-  border: solid 1px gray;
-  &:hover{
-    background-color: #ffc107;
-    color:black;
-  }
-`
 

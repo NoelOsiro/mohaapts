@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from 'react-router-dom';
 
 export const Section = styled.section`
     position: fixed;
@@ -65,7 +66,7 @@ export const LinksList = styled.ul`
     flex-direction: column;
     gap: 1rem;
 `
-export const ListItem = styled.li`
+export const ListItem = styled(Link)`
     padding: 0.6rem 1rem;
     border-radius: 0.6rem;
     &.active {

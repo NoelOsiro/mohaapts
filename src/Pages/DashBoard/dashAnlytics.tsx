@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { CardLists } from "../Components/Cards/CardLists";
-import DataCard from "../Components/Cards/Card";
+import { CardLists } from "../../Components/Cards/CardLists";
+import DataCard from "../../Components/Cards/Card";
 
 
 
 
-export default function Analytics() {
+export default function DashAnalytics() {
   return (
     <Section>
       {CardLists.map((card)=>(

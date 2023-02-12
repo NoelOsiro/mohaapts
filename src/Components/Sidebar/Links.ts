@@ -15,37 +15,37 @@ export interface ILink{
 export const SidebarLinks:ILink[]=[
     {   
         id:1,
-        href:"#",
+        href:"/",
         icon:MdSpaceDashboard,
         text: "Dashboard"
     },
     {
         id:2,
-        href:"#",
+        href:"/houses",
         icon:RiHomeSmileLine,
         text: "Property"
     },
     {
         id:3,
-        href:"#",
+        href:"/tenants",
         icon:FaHouseUser,
         text: "My Tenants"
     },
     {   
         id:4,
-        href:"#",
+        href:"/analytics",
         icon:FcBiotech,
         text: "Analytics"
     },
     {
         id:5,
-        href:"#",
+        href:"/account",
         icon:FcMoneyTransfer,
         text: "Payments"
     },
     {
         id:6,
-        href:"#",
+        href:"/services",
         icon:FcSettings,
         text: "Services"
     },
