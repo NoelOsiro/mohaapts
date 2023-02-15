@@ -8,15 +8,12 @@ const data = [
   { name: "Vacant", value: 20 },
 ];
 const COLORS = ["#04fa39", "#ffc107", "#FF8042"];
-
 let renderLabel = function(entry:any) {
   return entry.name;
 }
-
 const Tenants=() =>{
   return (
-    <Sectionpie>
-      
+    <Sectionpie> 
       <Titlepie>
             <span>Occupancy</span>
       </Titlepie>
@@ -47,6 +44,5 @@ const Tenants=() =>{
     </Sectionpie>
   );
 }
-
 export default Tenants;
 

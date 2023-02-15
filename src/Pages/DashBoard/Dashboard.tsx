@@ -10,7 +10,7 @@ import { Section, Grid, Row1, Row2, Row3 } from '../../Components/globalStyles';
 const Dashboard = () => {
   return (
     <Section>
-      <Navbar />
+      <Navbar title={"Dashboard"}/>
       <Grid>
         <Row1>
           <DashAnalytics />
@@ -27,6 +27,5 @@ const Dashboard = () => {
     </Section>
   );
 }
-
 export default Dashboard;
 

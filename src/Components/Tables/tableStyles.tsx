@@ -9,7 +9,6 @@ const cardStyles = css`
 export const Section = styled.section`
   display: block;
 `;
-
 export const SectionHeader = styled.h1`
   margin-top: 10px;
   margin-bottom: 10px;

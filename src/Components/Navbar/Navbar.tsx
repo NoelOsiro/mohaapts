@@ -1,15 +1,17 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
 import { Nav, Search, Title } from "./navStyles";
+interface Iprops{
+  title:string
+}
 
-
-export default function Navbar() {
+const Navbar=(props:Iprops)=> {
   return (
     <Nav>
       <Title className="title">
         <h4>Hi Noel,</h4>
         <h1>
-          <span>Dashboard</span>
+          <span>{props.title}</span>
         </h1>
       </Title>
       <Search>
@@ -19,3 +21,4 @@ export default function Navbar() {
     </Nav>
   );
 }
+export default Navbar;
